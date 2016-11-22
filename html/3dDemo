@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title0></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 200px;
+				height: 200px;
+				margin: 200px auto 0;
+				background-color: pink;
+				/*background-image: url(/home/zhao/workspace/courseDemo/img/a8773912b31bb051343dbed5307adab44aede036.jpg);*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		</div>
+	</body>
+<html>

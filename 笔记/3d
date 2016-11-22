@@ -1,0 +1,24 @@
+background	---背景颜色 背景图片 背景图片的位置 背景图片是否重复
+	-size	背景图片大小
+	-color	颜色(英文名，#,rgb)
+	-image	图片
+	-position位置
+	-repeat	是否重复
+
+CSS盒模型
+	内容区	content
+	内填充	padding
+	边框 	border
+	外间距	margin
+第一个元素magin-top错误：
+	解决办法---将其父元素，设置为padding-top
+
+伪类选择器
+	1.元素名：nth-of-type(2)	选中父类下第二个元素
+			first-of-type last-of-type
+			可以用n做变量写表达式
+			odd 奇数    even 偶数
+
+定位:
+	positon:relative	相对定位
+	positon:absolute	绝对
