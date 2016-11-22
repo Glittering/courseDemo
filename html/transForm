@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		*{margin: 0;padding:0}
+		.box{
+			width: 500px;
+			height: 500px;
+			margin: 10px 0px;
+			/*animation: scale 3s forwards;*/
+			background-image: url(file:///home/zhao/workspace/courseDemo/img/IMG_20161016_121003.jpg);
+			background-size: 800px;
+			background-repeat: no-repeat;
+			animation: rotate 5s;
+		}
+		@keyframes scale{
+			from{width: 50px;}
+			to{width: 1330px;}
+		}
+		@keyframes heigh{
+			from{height:200px}
+			to{height:1000px}
+		}
+		@keyframes rotate{
+			from{transform: rotateY(0deg);}
+			to{transform: rotateY(180deg);}
+		}
+		body{ 
+			transform-style: preserve-3d;
+			perspective: 300px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+		</div>
+	</body>
+</html>

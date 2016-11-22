@@ -22,3 +22,25 @@ CSS盒模型
 定位:
 	positon:relative	相对定位
 	positon:absolute	绝对
+
+
+定义动画
+	@keyframes 动画名称{
+		from{}
+		to{}
+	}
+
+执行动画
+animation:动画名称	执行时间	延迟 	旋转方式 停止方式	次数
+						linar ease   forwards	infinite
+
+transform: rotate(20 deg);	
+	transform 变形	rotate 旋转 skew 扭曲(角度，斜率) 
+			scale 缩放(左右，上下) translate 位移(左右，上下)
+
+3D变换
+transform-style: preserve-3d	转换成3d	//设置给父级别
+perspective			景深		//设置给父级别
+transform-origin:left		旋转边界
+
+opacity	---设置元素透明度 0-1
