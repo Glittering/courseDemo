@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.nav{
+				width: 800px;
+				height: 100px;
+				background: aqua;
+				margin: auto;
+			}
+			.nav_item{
+				height: 100px;
+				width: 200px;
+				float: left;
+				line-height: 100px;
+				text-align: center;
+				position: relative;
+			}
+			.nav_item li{
+				background: grey;
+				list-style: none;
+			}
+			.nav_item ul{
+				width: 200px;
+				position: absolute;
+				display: none;
+			}
+			.nav_item:hover ul{
+				display: block;
+			}
+			.nav_item:hover h4{
+				background: yellow;
+			}
+			.nav_item li:hover{
+				background: deepskyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<div class="nav_item">
+				<h4>导航一</h4>
+				<ul>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+				</ul>
+			</div >
+			<div class="nav_item">
+				<h4>导航二</h4>
+				<ul>
+					<li>21</li>
+					<li>22</li>
+					<li>23</li>
+					<li>24</li>
+				</ul>
+			</div>
+			<div class="nav_item">
+				<h4>导航三</h4>
+				<ul>
+					<li>31</li>
+					<li>32</li>
+					<li>33</li>
+					<li>34</li>
+				</ul>
+			</div>
+			<div class="nav_item">
+				<h4>导航四</h4>
+				<ul>
+					<li>41</li>
+					<li>42</li>
+					<li>43</li>
+					<li>44</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

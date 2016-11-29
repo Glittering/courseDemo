@@ -1,0 +1,397 @@
+选择器：
+	1、*  通配符选择器
+	2、. class名-----class选择器
+	3、# ID选择器（相当于身份证号，名字可以重复，ID不能重复，不符
+	  合W3C标准）。
+	4、标签名-----标签选择器
+	5、父元素 子元素------下级元素选择器（可以用来提高优先级）
+	6、伪类选择器：
+		1、元素名：nth-of-type（2）----选中第二个class为2的元素
+		2、first-of-type  选择第一个
+	7、群组选择器：.元素，.元素，.元素{}
+	8、:hover	--	鼠标放在上面时候的状态
+	9、:visited	--	访问过后的状态
+	10、:active	--	活动时的状态(鼠标点住不动)
+	
+	
+
+
+Css（层叠样式表）样式：
+	margin-----外间距（不会扩充元素）
+		{margin-left：左边距
+		 margin-right：右边距
+		 margin-top：上边距
+		 margin-bottom：下边距}
+		 margin：100px；----一个属性代表四个方向
+		 margin：100px 200px；---两个属性代表上下  左右
+		 margin：100px 200px 300px；---上   左右  下
+		 margin：100px 200px 300px 400px；--上 右 下 左
+
+
+	padding-----内填充（扩充元素）
+	width----宽度
+	height---高度
+	background---背景颜色  背景图片  背景图片的大小，背景图片是否重复
+	{background-color(直接跟着英文单词/#跟着十六位进制色) ---背景颜色
+	 background-size----背景图片大小
+	 background-image----url背景图片
+	 background-position----背景图片位置
+	 background-repeat---背景图片是否重复 }
+	1、CSS盒模型
+	 a）内容区content
+	 b）内填充padding
+	 c）边框border
+	 d）外填充margin
+	2、margin-top的bug：当一个父元素中的第一个子元素设置margin-top
+		子元素会将父元素带下来。
+		解决方法：将子元素的top值赋给父元素，加成padding-top
+	
+	3、定位
+	   position:relative 	--- 相对定位
+	   position：absolute	--- 绝对定位	
+	   position:fixed    	--- 固定定位
+	4、变形：
+	  transform：rotate---旋转
+	  skew----扭曲   scale---缩放   translate---位移
+	5、3D变形：
+	   transfor-style：preserve-3d---转换为3d
+	    perspective--景深     transform-origin---设置旋转中心点
+	    opacity---设置元素透明度1~0
+
+	6、边框border：（粗细  样式  颜色）  solid实线
+	7、圆角：border-radius   一个值--四个角   两个值---左上、右下 右上左下 
+				三个值---左上、右下  右上  左下  四个值---顺时针
+	8、绝对居中：
+		position:absolute; left:0; right:0; top:0; bottom:0; margin:0;
+		
+	9、盒阴影：box-shadow（X轴偏移量 Y轴偏移量  大小 羽化值  扩展值  颜色）
+	
+	10、文字阴影：text-shadow:x轴偏移量 y轴偏移量 大小 羽化值
+	
+	11、overflow：hidden----a）溢出隐藏    b）清除浮动  
+	12、float 浮动
+	13、清除浮动的方法：
+		overflow：hidden----溢出元素会被隐藏
+		clear：both---不符合w3c标准
+	14、line-height: 40px;//设置行高
+	    font-size: 20px;//字体大小
+	    text-align: center;	//字位置
+	15、cursor	---	定义鼠标的样式
+		pointer	---	手型
+		default	---	默认状态
+	16、user-select: none;	---	不可选中状态
+	17、text-decoration: none;	---	下划线状态
+	18、color	---	文字颜色
+	19、font-style	---	文字样式
+	20、font-weight	---	文字粗细  100~900 从细到粗
+	21、font-family	---	字体（先设置英文字体，再设置中文字体）
+				（安全字体：arial，微软雅黑）
+	22、font-size	---	字号
+	23、font	---	文字所有样式
+	24、display	---	元素的显示方式
+		block	---	块级元素
+		inline	---	行级元素
+		inline-block	---	行块元素
+		none	---	无
+	25、vertical-align	---	元素的垂直位置（给需要对齐的元素中比较大的）
+		top	---	顶部对齐
+		middle	---	居中对齐
+		bottom	---	底部对齐
+	26、z-index	---	元素的z轴索引值（值越大，显示优先级越高，没有单位）
+				（想要放在最下面的话设置-1）
+				（只有定位元素可以使用这个样式）
+	27、box-sizing	---	盒模型
+		contain-box	---	标准盒模型（默认）
+		border-box	---	怪异盒模型
+
+
+
+
+
+
+	5、定义动画：
+	@keyframes动画名称{
+		form{}
+		to{}
+		}
+	执行动画：
+		animation：（动画名称 动画执行时间 动画延时时间 执行效果 执行次数）
+	6、过渡动画
+	transition:需要执行的动画 持续执行的时间 延迟执行的时间 执行效果;
+
+
+	
+
+
+
+
+
+
+优先级：
+		同等级下，下面的样式优先显示
+		
+		！important  优先级最高
+		ID==100
+		Class==10
+		标签选择器==1
+	提升优先级的方法：
+		（1）使用ID提升优先级
+		（2）使用下级元素选择器提升优先级->用的最广泛
+		
+
+
+html基础知识：
+	1、同一个元素可以同时拥有多个class名和一个ID名，元素和
+	   元素之间class名可以重复，ID名不能重复。
+	2、网页命名规则：数字不能开头，不能有中文和空格。
+	3、所有命名符号必须为英文符号，字符是半角字符。
+	4、-webkit-	---	谷歌浏览器兼容性
+	   -ms-		---	ie兼容性
+	   -moz-	---	火狐兼容性
+	   -o-		---	欧朋兼容性
+	5、低版本(ie8)浏览器模拟圆角效果（使用背景图片--PNG）
+	6、更低版本(ie6)模拟圆角效果（使用背景图片--gif）
+	7、a标签设置颜色的时候要直接点出a标签（无论优先级高低）
+	8、消除图片下面和div之间的空隙：
+		1）将图片和div的宽高设置一致
+		2）将图片转块
+		3）给图片加 vertical-align: top;
+		*4）给图片加浮动，父元素清浮动
+	9、a标签锚点的用法：
+		给一个元素添加ID，a标签的href="#ID"，点击a标签之后就会跳转到对应的元素
+	10、css3计算器：calc(50% - 10px)	<--	可以百分比与具体像素混合计算
+	11、元素绝对定位之后宽度和高度的百分比以相对定位的元素为标准
+	12、元素的margin和padding的百分比是按照父元素的宽度算的
+	13  .box:nth-of-type(2) - 检测.box是什么标签，然后在同级里找到第二个该标签元素
+	    .box:nth-child(2)	- 检测.box级别， 然后再同级元素找到第二个。
+
+
+HTML主体结构：
+
+	<!DOCTYPE html>   声明网页为html5；
+
+	网页所有内容都要写到html标签里面；
+
+	<head></head>标签：声明网页的头部内容；
+
+	meta标签是一个单闭合标签，声明网页的编码；
+
+	<title>标签：声明网页的标题；
+
+	<body>标签：声明网页的主体内容；
+
+
+
+
+
+标签介绍：
+	1、<div></div>：div定义一块区域，可以放所有内容。
+	2、<table>  ：块级标签（独立成行，默认100%，可直接设置宽高）
+		<tr></tr> 表示一行
+		<td></td> 表示一列
+	   </table>
+
+		例子：<table><tr><td></td></tr></table>定义一个表格；
+	3、<form>:表单标签
+	   
+	   </form>  
+
+	4、<br/>换行符（单闭合标签）  <hr/>分隔线
+	5、<input/>输入框  行级块状元素（行块标签） 例如：<input type="text" value=""/>
+		input>value---定义输入框的默认文字
+		input>placeholder---
+		<input type="button" value="定义按钮"/>---定义一个按钮
+		<input type="date" >  日历
+  		<input type="checkbox"/>  复选按钮
+		<input type="password"/>  密码框
+		<input type="submit"/>    提交
+		<input type="reset"/>     重置
+		<input type="radio"/>     单选按钮
+		<input type="email"/>     
+	6、<form action=""></form>  action:跳转动作  跳转到制定页面
+		method属性：定义表单结果到浏览器的传送方式，get/post  默认是get
+	7、table>border ---设置表格的边框 没有单位
+	8、table>td>colspan---横向合并单元格
+	9、table>td>rowspan---纵向合并单元格
+	10、form>action---提交表单跳转网页
+	11、form>merhod---提交方式
+	12、<ul>----块级标签(固定格式)
+		<li>无序列表(存放一些简单的内容)</li>
+	    </ul>  
+		"style 里面  ul{list-style=none}"去除ul标签之前的小点 
+	13、h1~h6	定义标题
+	14、p		定义段落
+
+	15、<audio src=''></audio>	---	声音 mp3  wma  ogg
+		audio>autoplay	---	是否自动播放
+		*audio>controls	---	播放器控制按钮
+	16、<video src=''></video>	---	视频 mp4  flv
+		video>autoplay	---	是否自动播放
+		*video>controls	---	播放器控制按钮
+
+	17、span	---	万能标签（可以承载所有内容）
+	18、a		---	超级链接
+		href	---	链接地址
+		href='mailto:....'	---	邮箱
+	19、i	---	斜体
+	20、sub	---	下标文字
+	21、sup	---	上标文字
+	22、b	---	粗体
+	23、<img src='' />	---	图片，src为图片路径
+		alt	---	图片不显示时的替换文字
+		title	---	鼠标放上去时的提示文字
+
+
+
+ 	块级标签（独立成行，默认100%，可直接设置宽高）
+		<>
+	
+	行级标签（可与其他行级标签并排显示，默认宽度为0 ，宽度被内容撑开（自适应），
+		不可以直接设置宽高）
+		<h1>~<h6>---定义页面标题 （自动加粗）
+	行块标签（特性：同时拥有行级标签和块级标签的特性，既可以设置宽高，又可以并排显示，但行块
+		之间会有空隙）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+w3cschool   草鸟教程
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

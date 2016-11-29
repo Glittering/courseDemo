@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul {
+				-webkit-user-select: none;
+				margin-top: 50px;
+				list-style: none;
+				text-align: center;
+			}
+			li{
+				cursor: pointer;
+				padding: 15px;
+				/*height: 50px;*/
+				border: 1px solid #808080;
+				/*line-height: 50px;*/
+				text-align: center;
+				display: inline-block;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			body {
+				background: black;
+			}
+			
+			.box {
+				/*transform: scale(1);*/
+				/*margin-top: 200px;*/
+				/*top: 0;*/
+				border-radius: 16%;
+				width: 24%;
+				height: auto;
+				background: black;
+				overflow: hidden;
+				position: relative;
+				float: left;
+				margin: 0.5%;
+				opacity: 0;
+				cursor: pointer;
+				/*text-align: center;*/
+				/*vertical-align: middle;*/
+			}
+			
+			img {
+				width: 100%;
+				/*height: 200px;*/
+				vertical-align: top;
+				transition: all 1s;
+			}
+			/*.box:hover{
+				border-radius: 16%;
+			}*/
+			
+			.box:hover img {
+				/*width: 300px;
+				height: 300px;
+				position: relative;
+				left: 50%;
+				top: 50%;*/
+				transform: scale(1.5);
+				/*overflow: hidden;*/
+				opacity: 0.5;
+			}
+			
+			.testbo {
+				display: inline-block;
+				color: red;
+				position: absolute;
+				margin: auto;
+				/*left: 35%;*/
+				width: 100%;
+				text-align: center;
+				top: 50%;
+				opacity: 0;
+				-webkit-user-select: none;
+				cursor: pointer;
+				font-family: arial "微软雅黑";
+			}
+			
+			.testbo {
+				transition: all 0.5s;
+			}
+			
+			.box:hover .testbo {
+				opacity: 1;
+				top: 40%;
+			}
+			
+			.box:nth-of-type(1) {
+				animation: trans 2s 0s forwards;
+			}
+			
+			.box:nth-of-type(2) {
+				animation: trans 2s 0.25s forwards;
+			}
+			
+			.box:nth-of-type(3) {
+				animation: trans 2s 0.5s forwards;
+			}
+			
+			.box:nth-of-type(4) {
+				animation: trans 2s 0.75s forwards;
+			}
+			
+			.box:nth-of-type(5) {
+				animation: trans 2s 1s forwards;
+			}
+			
+			.box:nth-of-type(6) {
+				animation: trans 2s 1.25s forwards;
+			}
+			
+			.box:nth-of-type(7) {
+				animation: trans 2s 1.5s forwards;
+			}
+			
+			.box:nth-of-type(8) {
+				animation: trans 2s 1.75s forwards;
+			}
+			
+			#noth {
+				margin-top: 150px;
+			}
+			
+			.ti{
+				/*z-index: 2;*/
+				margin: auto;
+				margin-top: 150px;
+				color: white;
+				font-family:  arial "微软雅黑";
+				font-weight: bolder;
+				font-size: 50px;
+				text-align: center;
+			}
+			.ti:nth-of-type(2){
+				margin-top: 10px;
+				font-weight: 5;
+				font-size: xx-large;
+				color: #808080;
+			}
+			.span{
+				font-weight: 5;
+				font-size: 22px;
+				color: #808080;
+				-webkit-user-select: none;
+			}
+			li:hover span{
+				color: #FFFFFF;
+			}
+			li:hover{
+				border: 1px solid red;
+				background: red;
+			}
+			@keyframes trans {
+				from {
+					transform: translateY(0);
+					opacity: 0;
+				}
+				to {
+					transform: translateY(-60px);
+					opacity: 1;
+				}
+			}
+		</style>
+		<script type="text/javascript">
+			window.onscroll = function(){
+				console.log(document.body.scrollTop);
+			}
+		</script>
+		<!--<script type="text/javascript">
+			window.onload = function(){
+				var imga = document.getElementById("img");
+				var p = document.getElementById("p");
+				imga.onmouseover = function(){
+					p.style.opacity = "1";
+					p.style.top=("50px");
+				}
+				imga.onmouseout = function(){
+					p.style.opacity = "0";
+					p.style.top="65px";
+				}
+			}
+		</script>-->
+	</head>
+
+	<body>
+		<p class="ti">作品目录</p>
+		<p class="ti">Product</p>
+		<ul>
+			<li><span class="span">梦中景</span></li>
+			<li><span class="span">斗战神</span></li>
+			<li><span class="span">原创作品</span></li>
+			<li><span class="span">合作项目</span></li>
+		</ul>
+		<div id="noth">
+
+			<div class="box">
+				<!--<div style="width: 100%;height: 100%;overflow: hidden;">-->
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+				<!--</div>-->
+			</div>
+			<div class="box">
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+			</div>
+			<div class="box">
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+			</div>
+			<div class="box">
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+			</div>
+			<div class="box">
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+			</div>
+			<div class="box">
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+			</div>
+			<div class="box">
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+			</div>
+			<div class="box">
+				<img id="img" src="../img/Thunder.ico" />
+				<p class="testbo">这是一行文字</p>
+			</div>
+		</div>
+	</body>
+
+</html>

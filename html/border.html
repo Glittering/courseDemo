@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>border</title>
+		<style type="text/css">
+			.box{
+				margin: 200px auto;
+				width: 0px;
+				height: 0px;
+				border-top: 15px solid royalblue;
+				border-left: 15px solid transparent;
+				transform: rotate(-45deg);
+				position: relative;
+			}
+			body{
+				transform-style: preserve-3d;
+				perspective: 200px;
+			}
+			.inner{
+				transform: rotate(45deg);
+				width: 55px;
+				height: 0px;
+				position: absolute;
+				border-top: 13px solid royalblue;
+				left: -40px;
+				top: -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="inner"></div>
+		</div>
+	</body>
+</html>

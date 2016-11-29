@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 240px;height: 240px;margin: 200px auto; 
+				position: relative;background-color: darkcyan;
+				transform-style: preserve-3d;
+				transform: rotateX(42deg);
+				animation: ro 5s linear infinite;
+			}
+			body{
+				perspective: 500px;
+				overflow: hidden;
+			}
+			.inner{
+				width: 0px;height: 0px;
+				/*background: #F94;*/
+				position: absolute;
+				left: 0;top: 0;
+			}
+			.inner:nth-of-type(2){
+				border-top: 200px solid yellow;
+				border-right: 120px solid transparent;
+				border-left: 120px solid transparent;
+				top: 240px;
+				transform-origin: 0px -0px;
+				transform: rotateX(127deg);
+				/*animation: ro 5s linear infinite;*/
+			}
+			.inner:nth-of-type(3){
+				border-bottom: 200px solid mistyrose;
+				border-right: 120px solid transparent;
+				border-left: 120px solid transparent;
+				top:-200px;
+				transform-origin: 0px 200px;
+				transform: rotateX(-127deg);
+			}
+			.inner:nth-of-type(4){
+				border-left: 200px solid darkslateblue;
+				border-top: 120px solid transparent;
+				border-bottom: 120px solid transparent;
+				left: 240px;
+				transform-origin: 0 0;
+				transform: rotateY(-127deg);
+			}
+			.inner:nth-of-type(5){
+				border-right: 200px solid blanchedalmond;
+				border-top: 120px solid transparent;
+				border-bottom: 120px solid transparent;
+				left: -200px;
+				transform-origin: 200px 0;
+				transform: rotateY(127deg);
+			}
+			@keyframes ro{
+				from{transform: rotateX(0) rotateY(0);}
+				to{transform: rotateX(360deg) rotateY(360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="inner"></div>
+			<div class="inner"></div>
+			<div class="inner"></div>
+			<div class="inner"></div>
+			<div class="inner"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>TheStoryOfSun,MoonAndEarth</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box,			.sun,			.earth,			.earth:after {
+				width: 120px;
+				height: 120px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				border-radius: 50%;
+			}
+			
+			.box {
+				/*background: mediumseagreen;*/
+				animation: reotate 10s linear infinite;
+			}
+			
+			.sun {
+				background: red;
+				box-shadow: 0 0 20px 20px red;
+			}
+			
+			.earth {
+				width: 50px;
+				height: 50px;
+				background: darkgreen;
+				box-shadow: 0 0 8px 5px darkgreen;
+				top: -400px;
+				animation: reotate 5s linear infinite;
+			}
+			
+			.earth:after {
+				content: '';
+				width: 20px;
+				height: 20px;
+				background: yellow;
+				box-shadow: 0 0 4px 3px yellow;
+				top: -120px;
+			}
+			
+			.star{
+				animation: sha 3s linear infinite;
+				width: 100px;
+				height: 100px;
+				background: white;
+				position: absolute;
+				top: 50px;
+				left: 20px;
+				transform:scaleX(0.1)  rotate(45deg) ;
+				box-shadow: 0 0 50px 2px white;
+				/*animation: testRotate 5s linear infinite;*/
+			}
+			.star:before{
+				content: '';
+				width: 100px;
+				height: 100px;
+				background: white;
+				position: absolute;
+				transform:rotate(-45deg) scaleX(10) scaleY(0.1) rotate(45deg);
+				box-shadow: 0 0 5px 2px white;
+			}
+			.star:nth-last-of-type(2){
+				left: 400px;
+				top: 200px;
+			}
+			
+			body {
+				background: burlywood;
+				overflow: hidden;
+			}
+			/*.sk{
+				width: 10px;
+				height: 100px;
+				background: yellow;
+				position: absolute;
+				top: 100px;
+				left: 100px;
+				transform: skewY(15deg);
+			}*/
+			@keyframes reotate{
+				from{transform: rotate(0);}
+				to{transform: rotate(360deg);}
+			}
+			@keyframes testRotate{
+				from{transform:  rotate(0) scaleX(0.1);}
+				to{transform:  rotate(360deg) scaleX(0.1);}
+			}
+			@keyframes sha{
+				from{opacity: 1;}
+				to{opacity: 0.2;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="sun"></div>
+			<div class="earth"></div>
+		</div>
+		<div class="star"></div>
+		<div class="star"></div>
+		<div class="sk">
+			
+		</div>
+	</body>
+
+</html>

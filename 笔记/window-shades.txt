@@ -1,0 +1,20 @@
+img 
+	alt属性
+
+
+边框不影响图片大小
+	父级	li
+
+
+alert("");	规范用法
+
+
+mouse js中的方法
+	onmouseover	onmouseenter	onmousemove
+	onmouseout	onmouseleave
+
+
+transition	过渡动画		分隔符是： ，
+	transition：width 1s；
+	transition：width 1s，height 1s；
+	transition：all 2s；

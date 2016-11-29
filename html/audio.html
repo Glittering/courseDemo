@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.one{
+				width: 20px;
+				height: 20px;
+				background: red;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var au = document.getElementById("aud");
+				var di = document.getElementById("di");
+				di.onclick = function(){
+					au.pause();
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<audio id="aud" src="../audio/Urgot.mp3" autoplay="autoplay" controls="controls" loop="loop"></audio>
+		<div id="di" class="one">
+			
+		</div>
+	</body>
+</html>

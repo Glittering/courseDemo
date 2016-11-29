@@ -1,0 +1,233 @@
+w3c
+菜鸟教程
+
+
+**********************
+
+1.块级标签	---独立成行，默认宽度100%，可以直接设置宽高。
+
+<div>
+<table>	--样式:border   td:colspan rowspan     
+<form>	action 提交跳转网页	method 提交方式
+<label>
+h1-6 	自带加粗
+p	文本段落
+<ul><li>	无序列表
+audio	video
+
+2.行级标签	---可与其他行级标签并排显示，默认宽度0，宽度被内容撑开，不可以设置宽高
+span
+a
+i	b
+上标下标
+
+
+3.行块标签	---同时拥有行级标签和块级标签特性，既可以设置宽高，又可以独立显示。但是行块之间会有空隙（NB的BUG）。
+
+<input>
+
+
+**********************
+
+
+
+
+
+
+
+
+table
+写在td里
+colspan	合并行
+rowspan 合并列
+
+
+form	表单
+	action="" --跳转的页面
+	method="" --提交方法  get post
+
+
+input	行块元素（行级块状元素）
+	type=""		test  password  button  email  submit提交输入框  date日历  color拾色器  checkbox复选按钮  radio单选  reset
+	value 定义输入框的默认文字
+	placeholder 输入框的提示文字
+	checkbox    diable checked
+	radio  用name来区分组	
+
+
+label	标签内内容绑定
+	for 绑定按钮
+
+
+br 换行		hr 带分割线
+
+
+font	--css里
+	font-size	font-weight 粗细，斜体等	font-family 字体
+
+
+ul	CSS list-style
+
+float	浮动	一般用left
+	li 左浮动，	ul右浮动   可以正确顺序右移
+
+清浮动	overflow：hidden	--缺点，溢出元素隐藏
+	加一个box  css写 clear:both	--不符合w3c标准
+
+audio 声音	mp3 wma ogg
+	audio 	src 	autoplay 自动播放	controls 播放器控制按钮
+	自己制作界面，用js 中play 和 pause 播放和停止
+video 视频	MP4 fla
+
+
+span 万能标签（可以承载所有内容）
+
+
+a 超级链接	
+	text-decoration：none 清除下划线
+	href	mailto 调用邮件，没有出来选择器
+	a标签 不继承颜色，继承其他的
+
+
+cursor	定义鼠标样式
+	pointer 手形	copy 小加号	default
+
+
+user-select 是否能被选中
+
+
+-webkit	兼容谷歌浏览器 苹果浏览器
+-ms	-moz	-o
+低版本浏览器（ie8）模拟圆角效果（使用背景图片--png）
+更低版本（ie6）使用gif背景图片
+
+
+一般网页开始用
+*{}	ul{list-style}	a{test-decoration}
+
+<iframe src="border.html"></iframe>	多个页面用这个
+
+
+color	文字颜色
+	
+	
+
+伪类	hover 鼠标移动上去
+	visited 点击之后	放在hover上边
+	active	点中之后的颜色
+
+transition 和transform 用起来差不多
+
+
+i 斜体	b 粗体		font-style:可以实现斜体		font-weight:加粗	
+font-family 先设置英文字体，再设置中文（arial，微软雅黑  安全字体）
+font-size 字号	font 文字所有样式（需要全部设置，很难用）
+sub 下标	sup 上标
+
+
+img	行块标签
+	alt 图片加载失败时候出现的字
+	title 鼠标悬停的提示文字	
+	清除bug  
+		设置div高度和图片一样		
+		将图片转成块元素display:block
+		img设置属性	vertical-align：top
+		图片设置浮动，父元素清浮动
+
+
+display
+	block
+	inline
+	inline-block
+	none
+
+
+vertical-align	元素垂直位置，  类似test-align  --- （给需要对其的元素中比较大的）
+	top	bottom	middle居中
+
+z-index	数值越大，显示层级越高。	定位position的元素才能使用
+	z-index：1；	-1 用作背景，底色
+
+
+script中嵌入css
+	getElementbyId（“style”）[0].append("");
+
+
+hover 选择需要改变的元素的父类。就可以执行多元素动画了。
+
+
+
+
+全屏显示	
+	div body html    height=100%
+	定位之后，宽高 100%
+
+
+定位之后的元素 宽高为自适应
+
+
+position:fixed	的定位是相对于屏幕的左上角开始的。
+
+
+锚点	标签，给定ID	A标签href=“#ID”	跳转过去。	给定# 不加内容是回到最上方。
+
+
+box-sizing	盒模型
+	border-box	怪异盒模型
+	contain-box	默认，标准盒模型
+
+calc()	计算器
+	例如 calc（24.375% - 10px）	注意空格
+
+
+清除行块元素bug		定位，浮动，删除空隙。
+
+
+字体居中 	给出width  text-align：center	
+ 垂直居中	line-height	text-align：center
+
+元素的marging和padding 的百分比是按照父元素的宽度算的。
+
+
+js 里 window.onscroll = function（）
+	console.log（输出日志）	和 alert 一样的调试工具
+	document.body.scrollTop
+
+保存切图快捷键 sh ctrl alt s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HTML 的画图canvas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

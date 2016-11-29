@@ -1,0 +1,75 @@
+*********************************
+display
+span
+position
+透明度
+居中
+js获取和点击
+按钮的特殊属性
+自动执行
+*********************************
+
+
+
+display
+	inline 行
+	block 块
+	none
+
+span	行标签
+
+相对定位 相对于自身
+绝对定位 相对于整个网页
+
+rgba	第四个是透明度
+
+居中	行高 line-height	text-align：center
+	absolute 四个方向，margin
+	父级 height 100%	子级 top50% left50% margin-left=-  margin-top=- 在study项目有
+
+alert 调试程序用，提示框。
+
+获取按钮 	var oNext = document.getElementById("next");
+
+获取图片	var arrImg = document.getElementsByTagName("img");
+
+点击事件	onclick	function
+
+按钮特殊属性
+	user-select: none;	不能选中
+	cursor: default;	指针状态
+
+setInterval(function(),time);	
+	设置自动执行时间
+
+
+数组[i].index	绑定索引
+
+
+position fixd  固定屏幕位置
+
+
+
+
+
+
+
+
+
+2571 9016 9194
+
+h5
+u3d
+
+屏幕动，图片不动
+前景图，不随着宽高走
+上方的浮动的条怎么做。
+
+
+
+达内 几米 兄弟连
+
+
+三少爷的剑 
+一个月优酷土豆
+3个月虾米音乐
