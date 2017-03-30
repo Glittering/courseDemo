@@ -195,6 +195,8 @@ js 里 window.onscroll = function（）
 
 保存切图快捷键 sh ctrl alt s
 
+过渡  background-image: linear-gradient(90deg,transparent 20%,black 100%);
+
 
 
 
